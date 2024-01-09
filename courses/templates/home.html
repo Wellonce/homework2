@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home view</title>
+
+</head>
+<body>
+    <h1>Welcome to 'Our' university</h1>
+    <p>The oldest university in Britain, in the town of Oxford, England. There is evidence of teaching at Oxford as early as 1096, but the university developed rapidly from the middle of the 12th century. It has a high reputation for academic achievement. The university consists of a number of separate colleges, the earliest of which is University College (established 1249). Other famous colleges include All Souls, Balliol, Christ Church, Magdalen, New College, St John's and Trinity. Among the university's famous buildings are the Bodleian Library and the Sheldonian Theatre.</p><br><br>
+    <img src ="https://www.ox.ac.uk/sites/files/oxford/styles/ow_large_feature/s3/field/field_image_main/b_AllSoulsquad.jpg?itok=tTcH-5ix"> 
+    <ul>
+        {% for specialty in specialties %}
+        <li>
+          
+            {{ specialty.name }}
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
